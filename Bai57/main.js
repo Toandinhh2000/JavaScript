@@ -6,7 +6,9 @@ var courses = [
     'PHP'
 ];
 
-console.log(courses)
+courses.length = 10;
+
+console.log(courses);
 
 
 
