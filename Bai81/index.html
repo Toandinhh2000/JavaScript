@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML DOM</title>
+</head>
+<body>
+    <script>
+    Validator({
+form: '#form-1',
+errorSelector: '.form-message',
+rules: [
+    Validator.isRequired('#fullName'),
+    Validator.isEmail('#email'),
+    Validator.minLength('#password', 6),
+    Validator.isConfimed('#password_confirmation' , function(){
+        return 'f8';
+    })
+]
+    });
+    </script>
+</body>
+</html>
